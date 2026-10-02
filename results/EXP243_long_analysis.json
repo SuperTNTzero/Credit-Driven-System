@@ -1,0 +1,126 @@
+{
+  "experiment": "EXP243-long",
+  "primary_contrasts": [
+    {
+      "claim": "credit changes persistent structure",
+      "baseline": "shuffled_credit",
+      "metric": "promotions",
+      "paired_seeds": 20,
+      "full_mean": 22.4,
+      "baseline_mean": 19.15,
+      "mean_difference": 3.25,
+      "difference_ci95": [
+        2.15,
+        4.3
+      ],
+      "wins_ties_losses": [
+        17,
+        1,
+        2
+      ],
+      "exact_p": 6.866455078125e-05,
+      "holm_p": 0.0001373291015625
+    },
+    {
+      "claim": "credit improves downstream function",
+      "baseline": "shuffled_credit",
+      "metric": "postformation_success",
+      "paired_seeds": 20,
+      "full_mean": 0.7729166666666667,
+      "baseline_mean": 0.6395833333333333,
+      "mean_difference": 0.13333333333333336,
+      "difference_ci95": [
+        0.08958333333333335,
+        0.17708333333333334
+      ],
+      "wins_ties_losses": [
+        17,
+        1,
+        2
+      ],
+      "exact_p": 6.866455078125e-05,
+      "holm_p": 0.0001373291015625
+    },
+    {
+      "claim": "persistent organization supports repair",
+      "baseline": "no_phi",
+      "metric": "recovery_success",
+      "paired_seeds": 20,
+      "full_mean": 0.9,
+      "baseline_mean": 0.125,
+      "mean_difference": 0.775,
+      "difference_ci95": [
+        0.6,
+        0.925
+      ],
+      "wins_ties_losses": [
+        19,
+        0,
+        1
+      ],
+      "exact_p": 1.52587890625e-05,
+      "holm_p": 4.57763671875e-05
+    },
+    {
+      "claim": "compilation expands fixed-budget reach",
+      "baseline": "no_compile",
+      "metric": "complex_postformation_success",
+      "paired_seeds": 20,
+      "full_mean": 0.7055555555555556,
+      "baseline_mean": 0.03333333333333333,
+      "mean_difference": 0.6722222222222223,
+      "difference_ci95": [
+        0.5972222222222222,
+        0.725
+      ],
+      "wins_ties_losses": [
+        20,
+        0,
+        0
+      ],
+      "exact_p": 1.9073486328125e-06,
+      "holm_p": 1.1444091796875e-05
+    },
+    {
+      "claim": "organized reuse exceeds direct memory",
+      "baseline": "program_memory",
+      "metric": "transfer_success",
+      "paired_seeds": 20,
+      "full_mean": 0.8289473684210527,
+      "baseline_mean": 0.2026315789473684,
+      "mean_difference": 0.6263157894736842,
+      "difference_ci95": [
+        0.5578947368421052,
+        0.6736842105263158
+      ],
+      "wins_ties_losses": [
+        20,
+        0,
+        0
+      ],
+      "exact_p": 1.9073486328125e-06,
+      "holm_p": 1.1444091796875e-05
+    },
+    {
+      "claim": "persistence exceeds phase-local state",
+      "baseline": "phase_reset",
+      "metric": "success_rate",
+      "paired_seeds": 20,
+      "full_mean": 0.7724137931034483,
+      "baseline_mean": 0.5155172413793103,
+      "mean_difference": 0.25689655172413794,
+      "difference_ci95": [
+        0.20862068965517241,
+        0.306896551724138
+      ],
+      "wins_ties_losses": [
+        20,
+        0,
+        0
+      ],
+      "exact_p": 1.9073486328125e-06,
+      "holm_p": 1.1444091796875e-05
+    }
+  ],
+  "interpretation_rule": "A mechanism claim requires a positive paired effect and Holm-adjusted p < 0.05; boolean engineering gates alone are not statistical evidence."
+}

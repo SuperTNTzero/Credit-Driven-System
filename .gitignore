@@ -1,0 +1,70 @@
+# This repository is a curated publication snapshot. Keep the local research
+# workspace intact, but track only the auditable paper and reproduction chain.
+/*
+
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/requirements.txt
+
+# Manuscript and supplementary information
+!/期刊论文草稿_最小组织闭环与可验证算术发现.md
+!/补充材料_组织动力学完整数学与预测.md
+
+# Confirmatory reports
+!/EXP120_MiniGrid持久组织状态实验报告.md
+!/EXP166_机器人技能组合损坏与跨任务复用实验报告.md
+!/EXP243-long_单体长时程组织闭环实验报告.md
+!/EXP244_复杂度上升与非线性自动发现边界实验报告.md
+!/EXP245_探针生命周期与组织过拟合实验报告.md
+
+# Confirmatory implementations
+!/exp56_minigrid.py
+!/exp59_minigrid_architecture_comparison.py
+!/exp62_minigrid_fair_phi_attention.py
+!/exp120_minigrid_phi_persistent_organization.py
+!/exp243_long_closed_loop.py
+!/analyze_exp243_long.py
+!/exp244_complexity_scaling.py
+!/exp245_probe_lifecycle.py
+!/plot_exp243_long.py
+!/plot_exp244.py
+!/plot_exp245.py
+!/plot_organization_loop_overview.py
+!/plot_science_figures.py
+!/run_exp243_long.ps1
+!/run_exp244.ps1
+!/run_exp245.ps1
+
+# Selected formal results and manuscript figures
+!/results/
+/results/*
+!/results/EXP120_minigrid_phi_persistent_organization.json
+!/results/EXP120_minigrid_phi_persistent_organization.png
+!/results/EXP120_structure_intervention.png
+!/results/EXP243_long_closed_loop.json
+!/results/EXP243_long_analysis.json
+!/results/EXP244_complexity_scaling.json
+!/results/EXP244_complexity_analysis.json
+!/results/EXP245_probe_lifecycle.json
+!/results/EXP245_probe_lifecycle_analysis.json
+!/results/organization_loop_overview.png
+!/results/figure1_minimal_organization_loop.png
+!/results/figure2_exp243_long_flagship.png
+!/results/figure3_exp244_complexity_boundary.png
+!/results/figure4_cross_domain_lifecycle.png
+
+# Robot bridge experiment. The MuJoCo license remains excluded.
+!/robot_phi_exp166/
+/robot_phi_exp166/*
+!/robot_phi_exp166/README.md
+!/robot_phi_exp166/run_docker.ps1
+!/robot_phi_exp166/run_exp166.py
+!/robot_phi_exp166/results/
+/robot_phi_exp166/results/*
+!/robot_phi_exp166/results/EXP166_robot_skill_reuse.json
+!/robot_phi_exp166/results/EXP166_robot_skill_reuse.png
+
+!/continualworld_phi/
+/continualworld_phi/*
+!/continualworld_phi/Dockerfile

@@ -1,0 +1,244 @@
+{
+  "experiment": "EXP245-analysis",
+  "source": "EXP245_probe_lifecycle.json",
+  "policy_summary": [
+    {
+      "policy": "random_reset",
+      "success": 0.4444444444444444,
+      "queries_per_task": 5.305555555555555,
+      "generated_per_task": 5.305555555555555,
+      "final_archive": 0,
+      "formation_success": 0.55,
+      "formation_generated": 5.25,
+      "shift_success": 0.2,
+      "shift_generated": 5.8,
+      "revisit_success": 0.5833333333333334,
+      "revisit_generated": 4.866666666666666,
+      "revisit_minus_formation": 0.033333333333333326
+    },
+    {
+      "policy": "greedy_reset",
+      "success": 0.36666666666666664,
+      "queries_per_task": 5.416666666666667,
+      "generated_per_task": 5.416666666666667,
+      "final_archive": 0,
+      "formation_success": 0.45,
+      "formation_generated": 5.35,
+      "shift_success": 0.2,
+      "shift_generated": 5.8,
+      "revisit_success": 0.45,
+      "revisit_generated": 5.1,
+      "revisit_minus_formation": 0.0
+    },
+    {
+      "policy": "persistent_fifo",
+      "success": 0.29444444444444445,
+      "queries_per_task": 5.527777777777778,
+      "generated_per_task": 1.6055555555555556,
+      "final_archive": 15.666666666666666,
+      "formation_success": 0.3333333333333333,
+      "formation_generated": 2.2,
+      "shift_success": 0.2,
+      "shift_generated": 1.55,
+      "revisit_success": 0.35,
+      "revisit_generated": 1.0666666666666667,
+      "revisit_minus_formation": 0.016666666666666663
+    },
+    {
+      "policy": "shuffled_lifecycle",
+      "success": 0.3888888888888889,
+      "queries_per_task": 5.388888888888889,
+      "generated_per_task": 2.7222222222222223,
+      "final_archive": 20.083333333333332,
+      "formation_success": 0.4666666666666667,
+      "formation_generated": 3.25,
+      "shift_success": 0.2,
+      "shift_generated": 2.7333333333333334,
+      "revisit_success": 0.5,
+      "revisit_generated": 2.183333333333333,
+      "revisit_minus_formation": 0.033333333333333326
+    },
+    {
+      "policy": "credit_lifecycle",
+      "success": 0.35,
+      "queries_per_task": 5.45,
+      "generated_per_task": 2.727777777777778,
+      "final_archive": 21.333333333333332,
+      "formation_success": 0.4,
+      "formation_generated": 3.3,
+      "shift_success": 0.2,
+      "shift_generated": 2.6166666666666667,
+      "revisit_success": 0.45,
+      "revisit_generated": 2.2666666666666666,
+      "revisit_minus_formation": 0.04999999999999999
+    },
+    {
+      "policy": "oracle_lifecycle",
+      "success": 0.4111111111111111,
+      "queries_per_task": 5.355555555555555,
+      "generated_per_task": 2.238888888888889,
+      "final_archive": 17.25,
+      "formation_success": 0.5,
+      "formation_generated": 2.75,
+      "shift_success": 0.2,
+      "shift_generated": 2.033333333333333,
+      "revisit_success": 0.5333333333333333,
+      "revisit_generated": 1.9333333333333333,
+      "revisit_minus_formation": 0.033333333333333326
+    }
+  ],
+  "paired_seed_sign_flip": [
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "random_reset",
+      "phase": "all",
+      "mean_success_difference": -0.09444444444444443,
+      "two_sided_exact_p": 0.181640625,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "random_reset",
+      "phase": "formation",
+      "mean_success_difference": -0.15000000000000002,
+      "two_sided_exact_p": 0.28125,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "random_reset",
+      "phase": "revisit",
+      "mean_success_difference": -0.13333333333333333,
+      "two_sided_exact_p": 0.19921875,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "greedy_reset",
+      "phase": "all",
+      "mean_success_difference": -0.016666666666666653,
+      "two_sided_exact_p": 0.8515625,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "greedy_reset",
+      "phase": "formation",
+      "mean_success_difference": -0.05000000000000001,
+      "two_sided_exact_p": 0.671875,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "greedy_reset",
+      "phase": "revisit",
+      "mean_success_difference": -1.850371707708594e-17,
+      "two_sided_exact_p": 1.0,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "persistent_fifo",
+      "phase": "all",
+      "mean_success_difference": 0.05555555555555555,
+      "two_sided_exact_p": 0.16015625,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "persistent_fifo",
+      "phase": "formation",
+      "mean_success_difference": 0.06666666666666667,
+      "two_sided_exact_p": 0.3984375,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "persistent_fifo",
+      "phase": "revisit",
+      "mean_success_difference": 0.09999999999999999,
+      "two_sided_exact_p": 0.359375,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "shuffled_lifecycle",
+      "phase": "all",
+      "mean_success_difference": -0.038888888888888876,
+      "two_sided_exact_p": 0.6875,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "shuffled_lifecycle",
+      "phase": "formation",
+      "mean_success_difference": -0.06666666666666667,
+      "two_sided_exact_p": 0.84375,
+      "paired_seeds": 12
+    },
+    {
+      "policy_a": "credit_lifecycle",
+      "policy_b": "shuffled_lifecycle",
+      "phase": "revisit",
+      "mean_success_difference": -0.05000000000000001,
+      "two_sided_exact_p": 0.6875,
+      "paired_seeds": 12
+    }
+  ],
+  "lifecycle_totals": [
+    {
+      "policy": "random_reset",
+      "births_mean": 79.58333333333333,
+      "retirements_mean": 19.583333333333332,
+      "reactivations_mean": 0,
+      "eliminations_mean": 0,
+      "final_archive_mean": 0
+    },
+    {
+      "policy": "greedy_reset",
+      "births_mean": 81.25,
+      "retirements_mean": 21.25,
+      "reactivations_mean": 0,
+      "eliminations_mean": 0,
+      "final_archive_mean": 0
+    },
+    {
+      "policy": "persistent_fifo",
+      "births_mean": 24.083333333333332,
+      "retirements_mean": 22.916666666666668,
+      "reactivations_mean": 2.8333333333333335,
+      "eliminations_mean": 4.416666666666667,
+      "final_archive_mean": 15.666666666666666
+    },
+    {
+      "policy": "shuffled_lifecycle",
+      "births_mean": 40.833333333333336,
+      "retirements_mean": 48.833333333333336,
+      "reactivations_mean": 12,
+      "eliminations_mean": 16.75,
+      "final_archive_mean": 20.083333333333332
+    },
+    {
+      "policy": "credit_lifecycle",
+      "births_mean": 40.916666666666664,
+      "retirements_mean": 49.75,
+      "reactivations_mean": 12.833333333333334,
+      "eliminations_mean": 15.583333333333334,
+      "final_archive_mean": 21.333333333333332
+    },
+    {
+      "policy": "oracle_lifecycle",
+      "births_mean": 33.583333333333336,
+      "retirements_mean": 48.333333333333336,
+      "reactivations_mean": 18.75,
+      "eliminations_mean": 12.333333333333334,
+      "final_archive_mean": 17.25
+    }
+  ],
+  "headline": {
+    "credit_revisit_success": 0.45,
+    "random_reset_revisit_success": 0.5833333333333334,
+    "credit_revisit_generated": 2.2666666666666666,
+    "random_reset_revisit_generated": 4.866666666666666
+  }
+}
